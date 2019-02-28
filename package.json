@@ -1,6 +1,6 @@
 {
   "name": "factory-knows",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An instanceof alternative for non class based, factory oriented, programming.",
   "main": "index.js",
   "module": "esm/index.js",
