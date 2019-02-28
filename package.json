@@ -1,0 +1,26 @@
+{
+  "name": "factory-knows",
+  "version": "0.0.0",
+  "description": "An instanceof alternative for non class based, factory oriented, programming.",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "unpkg": "min.js",
+  "scripts": {
+    "build": "npm run esm && npm run cjs",
+    "cjs": "cp index.js cjs/ && echo 'module.exports = factoryKnows;' >> cjs/index.js",
+    "esm": "cp index.js esm/ && echo 'export default factoryKnows;' >> esm/index.js",
+    "test": "istanbul cover test/index.js"
+  },
+  "keywords": [
+    "factory",
+    "functional",
+    "instanceof",
+    "alternative"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "uglify-js": "^3.4.9"
+  }
+}
