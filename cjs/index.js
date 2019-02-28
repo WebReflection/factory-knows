@@ -1,6 +1,6 @@
 /*! (c) Andrea Giammarchi - ISC */
 function factoryKnows(fn) {
-  // it should be a WeakSet, but IE11 has only a WeakMap
+  // it should be a WeakSet, but IE11 has only a WeakMap so ... KISS
   // pony/polyfill available here: https://github.com/ungap/weakmap#weakmap
   var knowledge = new WeakMap;
   return Object.defineProperty(

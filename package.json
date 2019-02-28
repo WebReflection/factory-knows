@@ -6,9 +6,10 @@
   "module": "esm/index.js",
   "unpkg": "min.js",
   "scripts": {
-    "build": "npm run esm && npm run cjs",
+    "build": "npm run esm && npm run cjs && npm run min && npm test",
     "cjs": "cp index.js cjs/ && echo 'module.exports = factoryKnows;' >> cjs/index.js",
     "esm": "cp index.js esm/ && echo 'export default factoryKnows;' >> esm/index.js",
+    "min": "uglifyjs index.js --support-ie8 --comments=/^!/ -c -m -o min.js",
     "test": "istanbul cover test/index.js"
   },
   "keywords": [

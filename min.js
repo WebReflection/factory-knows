@@ -1,0 +1,2 @@
+/*! (c) Andrea Giammarchi - ISC */
+function factoryKnows(e){var r=new WeakMap;return Object.defineProperty(function(){var n=e.apply(this,arguments);return r.set(n,!0),n},"knows",{value:r.has.bind(r)})}
