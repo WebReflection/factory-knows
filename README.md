@@ -1,4 +1,4 @@
-# 🏭👃factory-knows
+# factory-knows 🏭👃
 
 [![Build Status](https://travis-ci.com/WebReflection/factory-knows.svg?branch=master)](https://travis-ci.com/WebReflection/factory-knows) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/factory-knows/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/factory-knows?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/WebReflection/factory-knows.svg)](https://greenkeeper.io/) ![WebReflection status](https://offline.report/status/webreflection.svg)
 
