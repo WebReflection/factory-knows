@@ -8,6 +8,7 @@
   "scripts": {
     "build": "npm run esm && npm run cjs && npm run min && npm test",
     "cjs": "cp index.js cjs/ && echo 'module.exports = factoryKnows;' >> cjs/index.js",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "esm": "cp index.js esm/ && echo 'export default factoryKnows;' >> esm/index.js",
     "min": "uglifyjs index.js --support-ie8 --comments=/^!/ -c -m -o min.js",
     "test": "istanbul cover test/index.js"
@@ -21,6 +22,7 @@
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.3",
     "istanbul": "^0.4.5",
     "uglify-js": "^3.4.9"
   }
